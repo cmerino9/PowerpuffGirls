@@ -1,0 +1,143 @@
+import random
+
+     
+def diceRoll(play):
+    min = 2
+    max = 18
+    if play == "y":
+        rollValue = random.randint(min, max)
+        print("You rolled", rollValue, "!")
+    elif play == "n":
+        print("Okay, Game over!")
+        
+name = input("Which Powerpuff girl do you want to be? Bubbles, Buttercup, or Blossom")
+        while name not in {'Buttercup','buttercup',"Bubbles",'bubbles','Blossom','Blossom'}:
+            input("Not eligible player, Which Powerpuff girl do you want to be? Bubbles, Buttercup, or Blossom")
+                       
+#code to only allow user to pick out of the three
+        
+lives = 4    #
+if numberoflives == 0:
+    print("Game over, you die",name "and powerpuff girls are no more, MOJO JOJO! >:(")
+    #put break of code here to end all of the program
+elif numberoflives == 4:
+    print(")
+elif numberoflives == 3:
+    print("You got three lives ",name"; Sugar, Spice and Everyhing nice. Chemical X is missing and ahhhh your powers are getting weaker")
+elif numberoflives == 3:
+    print("You got two lives ",name "; Sugar and Spice, keep going but becareful")
+elif numberoflives == 1:
+    print("You're on your last life. You only have Sugar left be very careful be powerful " ,name)
+    
+play = input("Would you like to roll the dice? Enter 'y' or 'n'. ")
+while play not in {'y', 'n'}:
+    play = input("Try again! ")
+    
+    
+diceRoll(play)
+
+
+
+if rollValue == 2:
+    rollValue2()
+elif rollValue == 3:
+    rollValue3()
+elif rollValue == 4:
+    rollValue4()
+elif rollValue == 5:
+    rollValue5()
+elif rollValue == 6:
+    rollValue6()
+    
+elif rollValue == 7:
+    
+    print("MOJO JOJO has sprayed you with his mind warping banana ray gun.. MOJO JOJO! ...I will get you ",name)
+    numberoflives -=
+    print(numberoflives)
+    decision6 = input("Do you want revenge on MOJO JOJO get up and spray him with your pixie stick gun")
+        while decision6 not in {"Y","y","yes","Yes","N","n","No","no"}:
+            input("Not correct response, Do you want or revenge on MOJO JOJO or not!!!!!")
+        if decision7 == "Y" or decision7 == "y" or decision7 == "Yes" or decision7 == "yes":
+            numberoflives-=
+            print("You are too weak to retaliate and therefore lose another life and MOJO JOJO rejoices \"You foolish girl you cannot beat my pixie gun MUHAHAHAH\"")
+            print(numberoflives)
+        elif decision7 == "N" or decision7 == "n" or decsion7 == "No" or decision7 == "no": 
+            print("You have evaded a potential serious attack from MOJO JOJO, and have fleed just losing that one life")
+    rollValue7()
+    
+elif rollValue == 8:
+    decision8 = input("You've run into a magic potion. Pink, bubbly and shiny do you want to drink it?" )
+        while decision6 not in {"Y","y","yes","Yes","N","n","No","no"}:
+            input("Not correct response, Do you want to drink the pink magic potion or not? Quit fooling around and pressing other keys")
+        if decision8 == "Y" or decision8 == "y" or decision8 == "Yes" or decision8 == "yes":
+            numberoflives -=
+            print("The magic potion has given a negative effect and it hurts you and you start throwing up nothing but sweet candy: you lose a life ",name)
+            print(numberoflives
+        if decision7 == "N" or decision7 == "n" or decsion7 == "No" or decision7 == "no":
+            print("You have gained an extra roll of the dice. Nice work ",name"!!")
+            #code for rolling dice comes here
+    rollValue8()
+    
+elif rollValue == 9:
+    print("You have encountered professor utonium and took a moment to clear your mind. You tell him about the struggle of dealing with all the villains. And yall have some pink tea.")
+    rollValue9()
+    
+elif rollValue == 10:
+    decision10 = input("You trespass in Fuzzy Lumpkins property while traveling throught the woods. He gots really angry and turns blood shot red and is ready to attack you. Do you try to calm him down and say \"OOOO SAAA\" Y or N?")
+        while decision6 not in {"Y","y","yes","Yes","N","n","No","no"}:
+            input("Not correct response, Do you want soother him by saying \"OOOO SAAAA\" Yes or No?")
+        if decision10 == "Y" or decision10 == "y" or decision10 == "Yes" or decision10 == "yes":
+            print("Great decision ",name", Fuzzy Lumpkins is dangerous when he is angry and could've caused serious damage to you. He has calm down and offered you another dice roll. POWER PUFF GO!")
+            #code to make user get another dice roll is added here
+        if decision7 == "N" or decision7 == "n" or decsion7 == "No" or decision7 == "no":
+            numberoflives -=
+            print("Fuzzy Lumpkins got more angry and throw you against the floor. You're seriously hurt and lose a life. You flee and get away while Fuzzy chases you but he's not fast enough to keep up.")
+            print(numberoflives)
+        rollValue10()
+        
+elif rollValue == 11:
+    print("You have landed in the land of Sugar Spice and everything nice you recieve an extra life and an extra dice roll. Life couldn't be better for a powerpuff girl!")
+    if numberoflives < 4:
+        numberoflives +=
+    print(numberoflives)
+    # another dice roll for user , that code should go here
+    rollValue11()   
+    
+elif rollValue == 12:
+    print("You have encountered the Gangreen Gang and the Grubber does a supersonic burp that leaves you dazed and you faint from the stink, you ",name" lose a life.")
+    numberoflives -=
+    print(numberoflives)
+    rollValue12()
+    
+elif rollValue == 13:
+    rollValue13()
+elif rollValue == 14:
+    rollValue14()
+elif rollValue == 15:
+    rollValue15()
+elif rollValue == 16:
+    rollValue16()
+elif rollValue == 17:
+    rollValue17()
+elif rollValue == 18:
+    rollValue18()  
+    
+    
+def rollValue2():
+def rollValue3():
+def rollValue4():
+def rollValue5():
+def rollValue6(playsix):
+    
+def rollValue7():
+def rollValue8():
+def rollValue9():
+def rollValue10():
+def rollValue11():
+def rollValue12():
+def rollValue13():
+def rollValue15():
+def rollValue16():
+def rollValue17():
+def rollValue18():
+'''    
