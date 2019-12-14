@@ -14,10 +14,10 @@ from colorama import Fore, Style
 def diceRoll(play):
     min = 1
     max = 3
-    if play == "y":
+    if play in ['Y','y']:
         rollValue = random.randint(min, max)
         print("...\n...\n....\n.....\nYou rolled", rollValue, "!\n")
-    elif play == "n":
+    else:
         print("Okay, Game over!")
     return rollValue
 
@@ -134,7 +134,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
             numberoflives -= 1
             decision7 = input(Fore.WHITE + "Do you want revenge on MOJO JOJO?! Should you get up and spray him with your pixie stick gun? ")
             while decision7 not in {"Y","y","yes","Yes","N","n","No","no"}:
-                input("Not a correct response, Do you want or revenge on MOJO JOJO or not!?!!!")
+                decision7 = input("Not a correct response, Do you want or revenge on MOJO JOJO or not!?!!!")
             if decision7 in {"Y", "y", "Yes", "yes"}:
                 numberoflives-= 1
                 print("You are too weak to retaliate and therefore lose another life. MOJO JOJO rejoices, \"You foolish girl! You cannot beat my ray gun MUHAHAHAH\"")
@@ -145,7 +145,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
             print(Fore.MAGENTA + "You've run into a magic potion. Pink, bubbly, and shiny..." )
             decision8 = input(Fore.WHITE + "do you want to drink it? " )
             while decision8 not in {"Y","y","yes","Yes","YES","N","n","No","no","NO"}:
-                input("Not correct response, Do you want to drink the pink magic potion or not? Quit fooling around by pressing other keys. ")
+                decision8 =input("Not correct response, Do you want to drink the pink magic potion or not? Quit fooling around by pressing other keys. ")
             if decision8 in {"Y", "y", "Yes", "yes"}:
                 numberoflives -= 1
                 print("The magic potion has a negative effect! It hurts you and you start throwing up nothing but sweet candy: you lose a life", name, ".")
@@ -159,7 +159,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
             print(Fore.BLUE + "You trespass in Fuzzy Lumpkins property while traveling through the woods. He gets really angry and turns blood-red and is ready to attack you.")
             decision10 = input(Fore.WHITE + "Do you try to calm him down and say \"OOOO SAAA\" Y or N? ")
             while decision10 not in {"Y","y","yes","Yes","N","n","No","no"}:
-                input("Not correct response, Do you want to soothe him by saying \"OOOO SAAAA\" Yes or No? ")
+                decision10 = input("Not correct response, Do you want to soothe him by saying \"OOOO SAAAA\" Yes or No? ")
             if decision10 in {"Y", "y", "Yes", "yes"}:
                 print(Fore.BLUE + "Great decision. Fuzzy Lumpkins is dangerous when he is angry and could've caused serious damage to you. He has calmed down and offered you another dice roll. POWERPUFF GO!")
             elif decision10 in {"N", "n", "No", "no"}:
@@ -194,7 +194,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
         elif space == 16:
             decision16 = input(Fore.GREEN + "You are sneaking into Mojo Jojo's hideout. He could be hiding. Do you try to find him and take him down\" Y or N? ")
             while decision16 not in {"Y","y","yes","Yes","N","n","No","no"}:
-                input("Not correct response, Do you want to take him down, Yes or No? ")
+                decision16 = input("Not correct response, Do you want to take him down, Yes or No? ")
             if decision16 in {"Y", "y", "Yes", "yes"}:
                 print("Great decision. MOJO JOJO plans to destroy the Powerpuff girls. However he has left the hideout but left plans for his next attack, so time for another dice roll. POWERPUFF GO!")
             if decision16 in {"N", "n", "No", "no"}:
@@ -204,7 +204,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
         elif space == 17:
             decision17 = input(Fore.CYAN + "You have been called to the Mayor's Office to brief about Mojo Jojo's plan to build an Ultimate Townsville Destruction Device do you go? Y or N? ")
             while decision17 not in {"Y","y","yes","Yes","N","n","No","no"}:
-                input("Not correct response, Do you go to the Mayor's office, Yes or No? ")
+                decision17 =input("Not correct response, Do you go to the Mayor's office, Yes or No? ")
             if decision17 in {"Y", "y", "Yes", "yes"}:
                 print(Fore.CYAN + "Great decision. The mayor appoints you CITY DEFENDER and gives you the key to the town. Time to hunt down Mojo Jojo, get going!")
             if decision17 in {"N", "n", "No", "no"}:
@@ -214,7 +214,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
         elif space == 18:
             decision18 = input(Fore.MAGENTA + "Mojo is preparing his destruction device. Do you try to find him and take him down Y or N? ")
             while decision18 not in {"Y","y","yes","Yes","N","n","No","no"}:
-                input("Not correct response, Do you want to take him down \ Yes or No? ")
+                decision18 = input("Not correct response, Do you want to take him down \ Yes or No? ")
             if decision18 in {"Y", "y", "Yes", "yes"}:
                 print("Great decision. MOJO JOJO's weapon is designed to destroy the Powerpuff girls and you have thwarted him this time. POWERPUFF GO!")
             if decision18 in {"N", "n", "No", "no"}:
@@ -255,7 +255,7 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
             while decision22 not in {'1', '2'}:  
                 decision22 = input("Enter 1 to Beat or 2 to Join in the race")
             if decision22 == "1":
-                decision22 = input("You cannot beat all the villains at once. You are beaten so painfully... till your new life starts")  
+                decision22 = input("You cannot beat all the villains at once. You are beaten so painfully... till your new life starts. Press Enter.")  
                 numberoflives -= 1
             elif decision22 == "2":
                 print("You have no luck until Mojo Jojo points out that the Mayor is a complete idiot and probably left the key in his desk.\nYou found it.\nYou get one more life to decide on how you want to rule this world.")  
@@ -271,8 +271,11 @@ while playAgain in ['yes', 'YES', 'Yes', 'y', 'Y']:
         if numberoflives == 0:
             space = 25
         if space == 24:
-            print(Fore.GREEN + "Congratulations!! You've made it with", numberoflives, "remaining. Now it is time for enjoying Christmas holidays with the other two Powerpuff girls.")
+            print(Fore.GREEN + "Congratulations!! You've made it with", numberoflives, " lives remaining. Now it is time for enjoying Christmas holidays with the other two Powerpuff girls.")
         lives()  
 
     #ask the user if they want to play again      
     playAgain = input(Fore.WHITE + "**********\nThank you for enjoying our game. Would you like to play again? Y/N: ")
+    while playAgain not in {'y','Y','yes','YES'}:
+        print("Okay, game over!")
+        break
